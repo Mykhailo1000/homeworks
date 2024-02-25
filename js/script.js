@@ -202,3 +202,4 @@ console.log(2 ** 4);
 console.log(Math.random());
 
 console.log((Math.random() * (100 - 20) + 1).toFixed());
+

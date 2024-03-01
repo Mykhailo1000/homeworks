@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dom</title>
+  </head>
+  <body>
+    <section class="dom_1">
+      <div class="part_1">
+        <input type="text" id="textField" placeholder="Enter text" />
+        <button id="changeButton">Change Text</button>
+      </div>
+
+      <div class="part_2">
+        <h1 class="title">Title</h1>
+        <img class="image" src="original_image.jpg" alt="Original Image" />
+      </div>
+
+      <div class="part_3">
+        <a class="link" href="https://www.example.com"
+          ><img class="image" src="image.png" alt="Image"
+        /></a>
+      </div>
+
+      <div class="part_4">
+        <ul class="list">
+          <li>First Item</li>
+          <li>Second Item</li>
+          <li>Third Item</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="dom_2">
+      <div class="part_1">
+        <ul id="categories">
+          <h2>Тварини</h2>
+          <ul>
+            <li>Кіт</li>
+            <li>Хом'як</li>
+            <li>Кінь</li>
+            <li>Папуга</li>
+          </ul>
+
+          <h2>Продукти</h2>
+          <ul>
+            <li>Хліб</li>
+            <li>Петрушка</li>
+            <li>Сир</li>
+          </ul>
+
+          <h2>Технології</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node</li>
+          </ul>
+        </ul>
+      </div>
+      <div class="part_2">
+        <ul id="ingredients"></ul>
+      </div>
+      <div class="part_3">
+        <ul id="gallery"></ul>
+      </div>
+      <div class="part_4">
+        <div id="counter">
+            <button type="button" data-action="decrement">-1</button>
+            <span id="value">0</span>
+            <button type="button" data-action="increment">+1</button>
+          </div>
+      </div>
+    </section>
+    <script src="./js/DOM_hw.js"></script>
+  </body>
+</html>

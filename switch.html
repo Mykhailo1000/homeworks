@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>switch_hw</title>
+  </head>
+  <body>
+    <section class="switch">
+      <div class="part_1">
+        <form>
+          <label for="beverage">Оберіть напій:</label>
+          <select id="beverage" name="beverage" onchange="showMessage()">
+            <option value="coffee">Кава</option>
+            <option value="tea">Чай</option>
+            <option value="juice">Сік</option>
+          </select>
+        </form>
+
+        <div id="message"></div>
+      </div>
+      <div class="part_2">
+        <label for="dayInput">Введіть день тижня:</label>
+        <input type="text" id="dayInput" /><br /><br />
+
+        <button onclick="checkDay()">Перевірити день</button>
+
+        <div id="result"></div>
+      </div>
+      <div class="part_3">
+        <label for="monthInput">Введіть номер місяця (1-12):</label>
+        <input type="number" id="monthInput" min="1" max="12" /><br /><br />
+
+        <button onclick="checkSeason()">Перевірити пору року</button>
+      </div>
+      <div class="part_4">
+        <label for="monthInput">Введіть номер місяця (1-12):</label>
+        <input type="number" id="monthInput" min="1" max="12" /><br /><br />
+
+        <button onclick="getDaysInMonth()">Перевірити кількість днів</button>
+      </div>
+      <div class="part_5">
+        <label for="colorInput">Введіть назву кольору:</label>
+        <input type="text" id="colorInput" /><br /><br />
+
+        <button onclick="checkColor()">Перевірити сигнал</button>
+      </div>
+      <div class="part_6">
+        <label for="number1">Введіть перше число:</label>
+        <input type="number" id="number1" /><br /><br />
+
+        <label for="number2">Введіть друге число:</label>
+        <input type="number" id="number2" /><br /><br />
+
+        <label for="operation">Оберіть операцію:</label>
+        <select id="operation">
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="*">*</option>
+          <option value="/">/</option></select
+        ><br /><br />
+
+        <button onclick="calculate()">Обчислити</button>
+      </div>
+    </section>
+    <script src="./js/switch.js"></script>
+  </body>
+</html>

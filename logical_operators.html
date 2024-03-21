@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>logical_operators_hw</title>
+  </head>
+  <body>
+    <section class="logical_operators">
+      <div class="part_1">
+        <label for="field1">Поле 1:</label>
+        <input type="text" id="field1" /><br /><br />
+
+        <label for="field2">Поле 2:</label>
+        <input type="text" id="field2" /><br /><br />
+
+        <button onclick="checkFields()">Перевірити поля</button>
+      </div>
+      <div class="part_2">
+        <label for="number1">Число 1:</label>
+        <input type="number" id="number1" /><br /><br />
+
+        <label for="number2">Число 2:</label>
+        <input type="number" id="number2" /><br /><br />
+
+        <button onclick="checkSum()">Перевірити суму</button>
+      </div>
+      <div class="part_3">
+        <label for="textInput">Введіть текст:</label>
+        <input type="text" id="textInput" /><br /><br />
+
+        <button onclick="checkText()">Перевірити текст</button>
+      </div>
+      <div class="part_4">
+        <form id="numberForm">
+          <label for="numberInput">Введіть число:</label>
+          <input
+            type="number"
+            id="numberInput"
+            name="numberInput"
+          /><br /><br />
+
+          <button type="button" onclick="checkNumber()">
+            Перевірити число
+          </button>
+        </form>
+        <div class="part_5">
+            <form id="formData" onsubmit="validateForm()">
+                <label for="nameInput">Ім'я:</label>
+                <input type="text" id="nameInput" name="nameInput"><br><br>
+                
+                <label for="emailInput">Email:</label>
+                <input type="email" id="emailInput" name="emailInput"><br><br>
+                
+                <label for="passwordInput">Пароль:</label>
+                <input type="password" id="passwordInput" name="passwordInput"><br><br>
+                
+                <button type="submit">Відправити</button>
+              </form>
+        </div>
+      </div>
+    </section>
+    <script src="./js/logical_operators_hw.js"></script>
+  </body>
+</html>
